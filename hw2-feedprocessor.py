@@ -3,27 +3,27 @@
 def stripWordPunctuation(word):
     return word.strip(".,()<>\"\\'~?!;*:[]-+/&")
 
-print "== part 3 =="
+print("== part 3 ==")
 ### part 3: fieldType() function
 # In hw3feed.txt, note that there are both posts and comments in this feed. There are also posters.
-# These lines each start with post:, comment:, and from: respectively.
+# These lines each start with post:, reply:, and from: respectively.
 # You are probably thinking "it would be really helpful if we had a function that I could
 # use to figure out which type of content a line contains."
 #
 # The good news is that now you will write that function. 
 #
 # We have included some starter code to define a function fieldType(). This function should take a line as
-# parameter and return the field type (either post, comment, or from).
+# parameter and return the field type (either post, reply, or from).
 
 def fieldType(line):
     # fill in your code here
 
 # You can uncomment and test your function with these lines
-#print fieldType("from: Sean")
-#print fieldType("post: Hi everyone")
-#print fieldType("comment: Thanks!")
+#print(fieldType("from: Sean"))
+#print(fieldType("post: Hi everyone"))
+#print(fieldType("reply: Thanks!"))
 
-print "== part 4 =="
+print("== part 4 ==")
 # Find out and print how many posts there are
 # as well as how many comments there are
 # 
@@ -40,10 +40,10 @@ f = open(fname,'r')
 
 # Fill in your code here.
 
-print "Total posts: %d"%posts
-print "Total comments: %d"%comments
+print("Total posts: %d"%posts)
+print("Total comments: %d"%comments)
 
-print "== part 5 =="
+print("== part 5 ==")
 ### part 5: printing users
 
 # Your job is to extract the names form the post: lines and print them out,
@@ -55,17 +55,17 @@ print "== part 5 =="
 
 # Duplicate names are expected for this part!
 
-fname = "hw3feed.txt"
+fname = "hw2feed.txt"
 f = open(fname,'r')
 #fill in code here
 
 
-print "== part 6 =="
+print("== part 6 ==")
 ### part 6: counting poster contribution frequency
-# See the instructions in the PDF file. They are easier to follow with
+# See the instructions in the readme file. They are easier to follow with
 # formatting
 
-pc_count = {}
+pr_count = {}
 f = open(fname,'r')
 
 # read in and count the total number of posts and comments for each user
@@ -81,7 +81,7 @@ f = open(fname,'r')
 # part 6 - Just for fun: how many unique posters were there?
 # (note this question is optional - but it's one line of code)
 
-print "== part 7 =="
+print("== part 7 ==")
 ### part 7: counting word frequency
 # This is similar to post count in part 6 and you might
 # even re-use some of your code. Count the number of
@@ -127,12 +127,12 @@ print "== part 8 =="
 
 # to test ,you can uncomment and run these  lines:
 #if wordFreq(fname,'post')["anyone"] == 9 and wordFreq(fname,'post')["eclipse"] == 5:
-#    print "Looks like wordFreq() works fine for posts"
+#    print("Looks like wordFreq() works fine for posts")
 #else:
-#    print "We got some errors with wordFreq() for posts."
+#    print("We got some errors with wordFreq() for posts.")
 #  
-#if wordFreq(fname,'comment')["file"] == 24 and wordFreq(fname,'comment')["if"] == 39:
-#    print "Looks like wordFreq() works fine for comments"
+#if wordFreq(fname,'reply')["file"] == 24 and wordFreq(fname,'reply')["if"] == 39:
+#    print("Looks like wordFreq() works fine for replies")
 #else:
-#    print "We got some errors with wordFreq() for comments."
+#    print("We got some errors with wordFreq() for replies.")
 
