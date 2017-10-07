@@ -23,43 +23,54 @@ Your output should look like:
 == 2 ==
 3
 == 3 ==
-3
+4
 == 4 ==
 Parasaurolophus: 4
 == 5 ==
-velociraptor
-tyrannosaurus rex
 triceratops
+tyrannosaurus rex
 dilophosaurus
 parasaurolophus
 gallimimus
+velociraptor
 == 6 ==
-velociraptor: 3
-tyrannosaurus rex: 1
 triceratops: 3
+tyrannosaurus rex: 1
 dilophosaurus: 2
 parasaurolophus: 4
 gallimimus: 12
+velociraptor: 4
 == 7 ==
-velociraptor: 3
+velociraptor: 4
 Sorry, no stegosaurus in the zoo.
 == 8 ==
-velociraptor: 3
+velociraptor: 4
 tyrannosaurus rex: 1
 brachiosaurus: 0
 archaeopteryx: 0
 gallimimus: 12
 === 9 ===
-velociraptor, 3
-tyrannosaurus rex, 1
-triceratops, 3
-dilophosaurus, 2
-parasaurolophus, 4
-gallimimus, 12
+triceratops,3
+tyrannosaurus rex,1
+dilophosaurus,2
+parasaurolophus,4
+gallimimus,12
+velociraptor,4
 === 10 ===
 ```
 
 but please note that the order of dinosaurs may vary; dictionaries have no order.
+
+Your CSV file contents should look like the table below when opened in Excel or another spreadsheet application. Again, order may vary, and your header row won't be bold.
+
+| type | count
+| --- | ---
+| triceratops	| 3
+| tyrannosaurus rex |	1
+| dilophosaurus |	2
+| parasaurolophus |	4
+| gallimimus |	12
+| velociraptor |	4
 
 ## Part 2: Exercises with Functions
 This section will give you some practice with defining and invoking functions.
