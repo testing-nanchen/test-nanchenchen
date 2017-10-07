@@ -73,7 +73,18 @@ Your CSV file contents should look like the table below when opened in Excel or 
 | velociraptor |	4
 
 ## Part 2: Exercises with Functions
-This section will give you some practice with defining and invoking functions.
+This section will give you some practice with defining and invoking functions. Once complete, your output should look like:
+```
+=== 1 ===
+a word?
+nice job?
+=== 2 ===
+progress?
+nicer job??
+=== 3 ===
+fun
+John Frens
+```
 
 ## Working with the feed
 From th next part in the assignment, we will be working with hw2-feedprocessor.py, which we will use to process the feed in hw2feed.txt. You may also want to open the feed to get a sense of it. 
