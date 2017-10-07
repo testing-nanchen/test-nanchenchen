@@ -25,14 +25,14 @@ print("=== 2 ===")
 # 2: returning a value
 #### questionString() returns a string with a question mark added to the end
 # input parameter:
-#   s: the string to exclaim
+#   s: the string to question
 # returns: a string
 
 # define questionString() here
 
 # uncomment the next two lines of code to check if you correctly defined the function
-#print questionString('progress')
-#print questionString(questionString('nicer job'))
+#print(questionString('progress'))
+#print(questionString(questionString('nicer job')))
 
 print("=== 3 ===")
 # 3: function with two parameters that returns a value
@@ -48,5 +48,5 @@ print("=== 3 ===")
 #try it with different values for X and Y
 X = 6
 Y = 4
-#print charsAfter(Y, 'not fun')
-#print charsAfter(X, 'from: John Frens')
+#print(charsAfter(Y, 'not fun'))
+#print(charsAfter(X, 'from: John Frens'))

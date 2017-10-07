@@ -21,7 +21,7 @@ print("== 3 ==")
 # Our HCDE 310 dinosaur zoo just got in a shipment of velociraptors.
 # (What could go wrong?)
 # 
-# Write code to insert a new key, 'velociraptor' into the dictionary, with a value of 3.
+# Write code to insert a new key, 'velociraptor' into the dictionary, with a value of 4.
 # Verify that it worked by printing out the value associated with the key 'velociraptor'
 
 print("== 4 ==")
@@ -68,7 +68,7 @@ potentialdinosaurs = ['velociraptor','tyrannosaurus rex','brachiosaurus','archae
 
 # put your code here
     
-print '=== 9 ==='
+print('=== 9 ===')
 # 9: printing comma separated data from a dictionary.
 # You may have worked with comma separated values before: they are basically 
 # spreadsheets or tables represented as plain text files, with each row
@@ -85,11 +85,13 @@ print '=== 9 ==='
 # put your code here
 
 
-
-print '=== 10 ==='
+print('=== 10 ===')
 # 10: saving a dictionary to a CSV file
 # Write key and value pairs from dinocount out to a file named 'dinocise.csv'.
 # (hint: the procedure is very close to that of (9)
+#
+# You should also include a header to row describe each column, labeling them as 
+# "type" and "count"
 #
 # put your code here
     
