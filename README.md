@@ -94,25 +94,75 @@ In hw2feed.txt, note that there are both posts and replies in this feed. There a
 
 You are probably thinking "it would be really helpful if we had a function that I could use to figure out which type of content a line contains." The good news is that now you will write one. Find the part 3 line in `hw2-feedprocessor.py`. We have included some starter code to define a function `fieldType()`. This function should take a line as a parameter and return the field type (either post, reply, or from).
 
-Note that you will get an error if you run this code before you fill in `fieldType()`.
+Note that you will get an error if you run the test code before you fill in `fieldType()`. Once it works, you should get:
+
+```
+== part 3 ==
+from
+post
+reply
+```
 
 ## Part 4: Total number of posts and replies
 Find and print the total number posts and replies in the file. Print it as
 
-`Total posts: <number>`
-`Total replies: <number>`
+```
+Total posts: <number>
+Total replies: <number>
+```
 
 ## Part 5: Printing posting and replying users
 Your next task is to print who posted each reply or post from the Slack channel. See the file for more details.
 The first part of the of part 4 should look like (It’s a long list, so I have clipped it!):  
 
+```
+ Jamie Byun
+ Alex Gilbert
+ Sean Munson
+ Sean Munson
+ Sean Munson
+ Sean Munson
+ Sean Munson
+ Sean Munson
+ Kelly Xu
+ Riah Buchanan
+ Christina Chung
+ Christina Chung
+ Jamie Byun
+ brian do
+...
+```
+
 ## Part 6: Counting poster contribution frequency
-Your next task in hw2-feedprocessor.py is to count how often each user posts or replies to the channel. You will need to use a dictionary to keep a running count of how many times each user posted or replied (a combined count for each) to the channell:
+Your next task in `hw2-feedprocessor.py` is to count how often each user posts or replies to the channel. You will need to use a dictionary to keep a running count of how many times each user posted or replied (a combined count for each) to the channell:
 *	The starter code begins by creating an empty dictionary, called pr_count. Note that you will need to open the file again, because looping through its lines in Part 5 will have “consumed” those lines. 
 *	Once you’ve extracted a user name (the same thing that you printed out in part 4), think of it as a key in the dictionary, whose value is the number of posts encountered by that user so far. If the key is not in the dictionary, set the value to 1. If the key is already in the dictionary, set its value to 1 more than its current value. (In the language of the accumulation pattern, the count is our accumulator variable for that user.) Hint: You have to handle when you have not seen that user before. You can do that with either `.get()` or with if/else statements. This is your choice.
 *	Once your program finishes reading through the file, print how many times each user posted or replied. To do this, create a string of the form: `<name>: <X>`, where <name> is the user’s name, and X is the number of times they posted. (See example screenshot for what it should look like.). Print that string.
 
 The output of part 6 should look like the following, though your usernames may be in different order (recall that dictionaries are in arbitrary order!): 
+```
+== part 6 ==
+ Jamie Byun: 3
+ Sean Munson: 18
+ Mulki Mohamed: 1
+ Alex Gilbert: 3
+ Lynda Nguyen: 2
+ Mimi Peach: 1
+ Kelly Xu: 2
+ Riah Buchanan: 1
+ Christina Chung: 5
+ Keristian Farra: 1
+ brian do: 1
+ Samuelle Saliba: 2
+ helene shea: 2
+ Asikur Rahman: 2
+ Sam O'Brien: 1
+ ```
+ 
+Then, print the number of unique posters/commenters:
+```
+15 unique posters
+```
 
 ## Part 7: Counting word frequency in posts
 For part 7, we will count the word frequency in posts (not replies!) to the Slack channel. For this part:
@@ -123,6 +173,35 @@ Put your code in hw2-feedprocessor.py.
 
 Example output below. It has been trimmed and yours may be in a different order.
 
+```
+if: 11
+with: 6
+your: 10
+to: 28
+and: 14
+or: 6
+you: 19
+need: 5
+a: 19
+on: 9
+for: 13
+are: 8
+we: 5
+in: 17
+should: 5
+be: 9
+of: 10
+the: 26
+is: 11
+hi: 5
+office: 7
+hours: 6
+this: 7
+class: 6
+it: 7
+help: 5
+```
+
 ## Part 8: Counting word frequency in posts or replies
 For this part, write a function, `wordFreq()`, that will return the word frequency in either posts or comments as a dictionary
 As parameters, it must take a file name and the field type (either post or replies) as a parameter. For example, if I want to get a dictionary of word counts in the posts in hw2feed.txt, I should be able to call:
@@ -132,6 +211,10 @@ You can use your code from part 7 as a starting point, or if you wrote part 6 us
 
 There are a few lines of code at the end that you can use to test your function. If all goes well, you’ll get:
 
+```
+Looks like wordFreq() works fine for posts
+Looks like wordFreq() works fine for replies
+```
 
 ## P0: Identify an API
 Please see a separate assignment on Canvas -> Assignments -> Project (to be introduced in class on Thursday).
