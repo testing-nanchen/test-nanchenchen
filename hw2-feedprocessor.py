@@ -49,7 +49,7 @@ print("== part 5 ==")
 # Your job is to extract the names of people who made each post: and print them out,
 # exactly as it is shown in the readme. 
 #
-# Note: only onclude people who made posts, not comments
+# Note: only include people who made posts, not comments
 # 
 # Hint: if you  want to remove "from:" you can use string slicing operations
 # or the replace method.
