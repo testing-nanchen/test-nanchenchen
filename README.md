@@ -113,7 +113,7 @@ Total replies: <number>
 
 ## Part 5: Printing posting users
 Your next task is to print who posted each post from the Slack channel. See the file for more details.
-The first part of the of part 4 should look like (It’s a long list, so I have clipped it!):  
+The first part of part 5's output should look like (It’s a long list, so I have clipped it!):  
 
 ```
  Jamie Byun
