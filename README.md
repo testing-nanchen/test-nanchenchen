@@ -111,8 +111,8 @@ Total posts: <number>
 Total replies: <number>
 ```
 
-## Part 5: Printing posting and replying users
-Your next task is to print who posted each reply or post from the Slack channel. See the file for more details.
+## Part 5: Printing posting users
+Your next task is to print who posted each post from the Slack channel. See the file for more details.
 The first part of the of part 4 should look like (It’s a long list, so I have clipped it!):  
 
 ```
@@ -168,6 +168,7 @@ Then, print the number of unique posters/commenters:
 For part 7, we will count the word frequency in posts (not replies!) to the Slack channel. For this part:
 *	Use `stripWordPunctuation()` to remove punctuation from each word. This function will only work if you pass it a word (i.e., not a line).
 *	Convert all text to lower case before counting.
+* Print only words that appear at least five times.
 
 Put your code in hw2-feedprocessor.py. 
 
