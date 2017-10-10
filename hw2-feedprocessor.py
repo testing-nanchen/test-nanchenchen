@@ -55,7 +55,7 @@ print("== part 5 ==")
 # or the replace method.
 #
 # You may use the fieldType() function but you do not have to. You may also define
-# another function, such as fieldContents(), to help you but that optional. 
+# another function, such as fieldContents(), to help you but that is optional. 
 #
 # Duplicate names are expected for this part!
 
@@ -147,7 +147,7 @@ print("== part 8 ==")
 #def wordFreq
 
 # to test ,you can uncomment and run these lines:
-#wfp = wordFreq(fname,'reply')
+#wfp = wordFreq(fname,'post')
 #if wfp["environment"] == 1 and wfp["file"] == 3 and wfp["pycharm"] == 1 and wfp.get("post",0) == 0:
 #    print("Looks like wordFreq() works fine for posts")
 #else:
