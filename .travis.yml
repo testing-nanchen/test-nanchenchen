@@ -2,7 +2,9 @@ language: python
 
 python:
   - "3.6"
+
 cache: pip
+
 script:
   - python hw2-part1.py
   - python hw2-part2.py
